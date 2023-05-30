@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="bootstrap.min.css" />
+      <link rel="stylesheet" href="index.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <section class="main mt-4">
+         <div class="container">
+            <h1 class="mb-4">Product</h1>
+            <form action="">
+               <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                     >Product Name</label
+                  >
+                  <input
+                     type="email"
+                     class="form-control"
+                     id="exampleFormControlInput1"
+                     placeholder=""
+                  />
+               </div>
+               <div class="mb-3">
+                  <label for="exampleFormControlInput2" class="form-label"
+                     >Product Price</label
+                  >
+                  <input
+                     type="number"
+                     class="form-control"
+                     id="exampleFormControlInput2"
+                     placeholder=""
+                     required
+                  />
+               </div>
+               <div class="mb-3">
+                  <label for="exampleFormControlInput3" class="form-label"
+                     >Product Category</label
+                  >
+                  <input
+                     type="email"
+                     class="form-control"
+                     id="exampleFormControlInput3"
+                     placeholder=""
+                  />
+               </div>
+               <div class="mb-3">
+                  <label for="exampleFormControlInput4" class="form-label"
+                     >Product Description</label
+                  >
+                  <input
+                     type="email"
+                     class="form-control"
+                     id="exampleFormControlInput4"
+                     placeholder=""
+                  />
+               </div>
+               <div class="mb-3">
+                  <label for="exampleFormControlInput5" class="form-label"
+                     >Count</label
+                  >
+                  <input
+                     type="email"
+                     class="form-control"
+                     id="exampleFormControlInput5"
+                     placeholder=""
+                  />
+               </div>
+               <div class="mb-3">
+                  <label for="exampleFormControlInput6" class="form-label"
+                     >Multiply</label
+                  >
+                  <input
+                     type="email"
+                     class="form-control"
+                     id="exampleFormControlInput6"
+                     placeholder=""
+                  />
+               </div>
+               <submit class="btn btn-primary mb-5" onclick="addProduct()">
+                  Add Product
+               </submit>
+               <button class="btn btn-danger mb-5" onclick="deleteAll()">
+                  Delete All
+               </button>
+               <input
+                  type="text"
+                  placeholder="Search"
+                  id="ProductSearch"
+                  class="form-control w-50 mx-auto my-auto mb-5"
+                  onkeyup="Search(this.value)"
+               />
+            </form>
+            <table class="table table-bordered text-center">
+               <thead>
+                  <th class="th">ID</th>
+                  <th class="th">Name</th>
+                  <th class="th">Price</th>
+                  <th class="th">Category</th>
+                  <th class="th">Description</th>
+                  <th class="th">Multiply</th>
+                  <th class="th">Update</th>
+                  <th class="th">Delete</th>
+                  <th class="th">Add more</th>
+               </thead>
+               <tbody id="tbody"></tbody>
+            </table>
+         </div>
+      </section>
+      <script src="popper.min.js"></script>
+      <script src="bootstrap.min.js"></script>
+      <script src="index.js"></script>
+   </body>
+</html>
